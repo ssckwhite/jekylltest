@@ -48,6 +48,7 @@ verbose: false
 # 7. Site settings
 analytics_adobe: ""
 assets: "https://wet-boew.github.io/themes-dist"
+remote_theme: wet-boew/gcweb-jekyll
 baseurl: ""
 description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
