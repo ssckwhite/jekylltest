@@ -48,8 +48,8 @@ verbose: false
 # 7. Site settings
 analytics_adobe: ""
 assets: "https://wet-boew.github.io/themes-dist"
-remote_theme: wet-boew/gcweb-jekyll
-baseurl: ""
+remote_theme: wet-boew/gcweb-jekyll@v1.1.0
+baseurl: "/jekylltest" # sets this path as the root; e.g. if equal to the repo name will conveniently trim https://ssckwhite.github.io/jekylltest/ to https://ssckwhite.github.io/
 description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
   fr: "Adaption Jekyll du theme GCWeb" # French site description and default description
