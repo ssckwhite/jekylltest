@@ -13,7 +13,7 @@
   section: message
   stylesheets:
     - href: "https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/messages.min.css"
-      integrity: "sha384-ieXF8TlFIWR7tmx2r1qZTrSieCbLCTraxu/hTRWZKzum4jiv2vtalhp+kxa8/WHe"
+      #integrity: "sha384-ieXF8TlFIWR7tmx2r1qZTrSieCbLCTraxu/hTRWZKzum4jiv2vtalhp+kxa8/WHe"
       crossorigin: "anonymous"
   subject:
     en: Government of Canada, services
