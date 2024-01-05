@@ -2,16 +2,11 @@
 altLangPrefix: about-us
 description: 
   fr: Ceci est juste une autre page
-#footer: true
-#langtoggle: true
 lang: fr
-#noMainContainer: false
-#sitemenu: true
-#sitesearch: true
 title: À propos de nous
 ---
 
-## À propos de nous
+# À propos de nous
 
 <div class="row">
   <div class="col-md-6">
@@ -31,15 +26,7 @@ The Business Unit oversees the cloud experimentation program, including IM/IT to
 
 <div class="row wb-eqht">
   {% for member in site.data.staff.business %}
-    <div class="col-sm-6 col-md-3">
-      <section class="panel panel-default hght-inhrt">
-        <div class="panel-body">
-          <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
-          <p>{{ member.name }}</p>
-          <p>{{ member.title.fr }}</p>
-        </div>
-      </section>
-    </div>
+    {% include staffpanel.html %}
   {% endfor %}
 </div>
 
@@ -50,15 +37,7 @@ The Cloud Experimentation Evolution Team offers expert cloud advisory services, 
 
 <div class="row wb-eqht">
   {% for member in site.data.staff.evo %}
-    <div class="col-sm-6 col-md-3">
-      <section class="panel panel-default hght-inhrt">
-        <div class="panel-body">
-          <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
-          <p>{{ member.name }}</p>
-          <p>{{ member.title.fr }}</p>
-        </div>
-      </section>
-    </div>
+    {% include staffpanel.html %}
   {% endfor %}
 </div>
 
@@ -71,14 +50,6 @@ The AI for Science team manages the CanChat for Science pilot and investigates A
 
 <div class="row wb-eqht">
   {% for member in site.data.staff.ops %}
-    <div class="col-sm-6 col-md-3">
-      <section class="panel panel-default hght-inhrt">
-        <div class="panel-body">
-          <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
-          <p>{{ member.name }}</p>
-          <p>{{ member.title.fr }}</p>
-        </div>
-      </section>
-    </div>
+    {% include staffpanel.html %}
   {% endfor %}
 </div>

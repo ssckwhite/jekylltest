@@ -17,10 +17,10 @@ title: Test page - Canada.ca
 # {{ page.contentTitle }}
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     We're a small innovative team focused on providing science research timely access to an exclusive set of secure environments & solutions where modern & innovative methods to doing science can be discovered with cutting-edge cloud technologies, supported by dedicated expert advisory services working across multiple cloud providers.
   </div>
-  <div class="col-md-3">
+  <div class="col-md-8">
     <img src="/assets/images/it-workers.png" alt="IT workers" class="img-responsive" />
   </div>
 </div>
@@ -32,32 +32,9 @@ title: Test page - Canada.ca
 The Business Unit oversees the cloud experimentation program, including IM/IT tooling, reporting, procurement, and FinOps.
 
 <div class="row wb-eqht">
-  <div class="col-sm-6 col-md-3">
-    <section class="panel panel-default hght-inhrt">
-      <div class="panel-body">
-        <img src="/assets/images/avatars/kw.png" alt="Jean-Francois Michaud avatar" class="img-responsive" />
-        #### Jean-Francois Michaud
-        Manager - Business Unit & Cloud Experimentation Evolution
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <section class="panel panel-default hght-inhrt">
-      <div class="panel-body">
-        <img src="/assets/images/avatars/kw.png" alt="James Buchanan avatar" class="img-responsive" />
-        <p>James Buchanan</p>
-        <p>Program Enablement</p>
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <section class="panel panel-default hght-inhrt">
-      <div class="panel-body">
-        <img src="/assets/images/avatars/kw.png" alt="Greg Linton avatar" class="img-responsive" />
-        <p>Greg Linton</p>
-      </div>
-    </section>
-  </div>
+  {% for member in site.data.staff.business %}
+    {% include staffpanel.html %}
+  {% endfor %}
 </div>
 
 ### Cloud Experimentation Evolution team
@@ -65,32 +42,9 @@ The Business Unit oversees the cloud experimentation program, including IM/IT to
 The Cloud Experimentation Evolution Team offers expert cloud advisory services, encompassing application optimization, cloud-native infrastructure development, and tailored advice based on client skillset maturity.
 
 <div class="row wb-eqht">
-  <div class="col-sm-6 col-md-3">
-    <section class="panel panel-default hght-inhrt">
-      <div class="panel-body">
-        <img src="/assets/images/avatars/kw.png" alt="Jean-Francois Michaud avatar" class="img-responsive" />
-        #### Jean-Francois Michaud
-        Manager - Business Unit & Cloud Experimentation Evolution
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <section class="panel panel-default hght-inhrt">
-      <div class="panel-body">
-        <img src="/assets/images/avatars/kw.png" alt="James Buchanan avatar" class="img-responsive" />
-        <p>James Buchanan</p>
-        <p>Program Enablement</p>
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <section class="panel panel-default hght-inhrt">
-      <div class="panel-body">
-        <img src="/assets/images/avatars/kw.png" alt="Greg Linton avatar" class="img-responsive" />
-        <p>Greg Linton</p>
-      </div>
-    </section>
-  </div>
+  {% for member in site.data.staff.evo %}
+    {% include staffpanel.html %}
+  {% endfor %}
 </div>
 
 ### The AI for Science team
@@ -98,3 +52,9 @@ The Cloud Experimentation Evolution Team offers expert cloud advisory services, 
 The AI for Science team manages the CanChat for Science pilot and investigates AI's potential for enhancing scientific research IT services, in partnership with SSC's AI Program.
 
 ### Operations team
+
+<div class="row wb-eqht">
+  {% for member in site.data.staff.ops %}
+    {% include staffpanel.html %}
+  {% endfor %}
+</div>
