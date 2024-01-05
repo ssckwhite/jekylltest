@@ -1,14 +1,13 @@
 ---
 altLangPrefix: about-us
-dateModified: 2020-01-08
 description: 
   fr: Ceci est juste une autre page
-footer: true
-langtoggle: true
+#footer: true
+#langtoggle: true
 lang: fr
-noMainContainer: false
-sitemenu: true
-sitesearch: true
+#noMainContainer: false
+#sitemenu: true
+#sitesearch: true
 title: À propos de nous
 ---
 
@@ -23,4 +22,63 @@ title: À propos de nous
   </div>
 </div>
 
-More text that continues after the image has been inserted and will wrap around the image as well.
+
+## Meet the team
+
+### Business Unit
+
+The Business Unit oversees the cloud experimentation program, including IM/IT tooling, reporting, procurement, and FinOps.
+
+<div class="row wb-eqht">
+  {% for member in site.data.staff.business %}
+    <div class="col-sm-6 col-md-3">
+      <section class="panel panel-default hght-inhrt">
+        <div class="panel-body">
+          <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
+          <p>{{ member.name }}</p>
+          <p>{{ member.title.fr }}</p>
+        </div>
+      </section>
+    </div>
+  {% endfor %}
+</div>
+
+
+### Cloud Experimentation Evolution team
+
+The Cloud Experimentation Evolution Team offers expert cloud advisory services, encompassing application optimization, cloud-native infrastructure development, and tailored advice based on client skillset maturity.
+
+<div class="row wb-eqht">
+  {% for member in site.data.staff.evo %}
+    <div class="col-sm-6 col-md-3">
+      <section class="panel panel-default hght-inhrt">
+        <div class="panel-body">
+          <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
+          <p>{{ member.name }}</p>
+          <p>{{ member.title.fr }}</p>
+        </div>
+      </section>
+    </div>
+  {% endfor %}
+</div>
+
+
+### The AI for Science team
+
+The AI for Science team manages the CanChat for Science pilot and investigates AI's potential for enhancing scientific research IT services, in partnership with SSC's AI Program.
+
+### Operations team
+
+<div class="row wb-eqht">
+  {% for member in site.data.staff.ops %}
+    <div class="col-sm-6 col-md-3">
+      <section class="panel panel-default hght-inhrt">
+        <div class="panel-body">
+          <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
+          <p>{{ member.name }}</p>
+          <p>{{ member.title.fr }}</p>
+        </div>
+      </section>
+    </div>
+  {% endfor %}
+</div>

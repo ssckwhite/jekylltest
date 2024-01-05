@@ -1,0 +1,80 @@
+{
+    "business" : [
+        {
+            "name" : "Jean-Francois Michaud",
+            "title" : {
+                "en" : "Manager - Business Unit & Cloud Experimentation Evolution",
+                "fr" : "Gestionnaire"
+            },
+            "avatar" : "jf.png"
+        },
+        {
+            "name" : "James Buchanan",
+            "title" : {
+                "en" : "Program Enablement",
+                "fr" : "Program Enablement"
+            },
+            "avatar" : "jb.png"
+        }
+    ],
+    "evo" : [
+        {
+            "name" : "Kevin White",
+            "title" : {
+                "en" : "Cloud Developer",
+                "fr" : "Developper infonuagique"
+            },
+            "avatar" : "kw.png"
+        },
+        {
+            "name" : "Greg Linton",
+            "title" : {
+                "en" : "Cloud Developer",
+                "fr" : "Developper infonuagique"
+            },
+            "avatar" : "kw.png"
+        },
+        {
+            "name" : "Ryne Wood",
+            "title" : {
+                "en" : "Cloud Developer",
+                "fr" : "Developper infonuagique"
+            },
+            "avatar" : "kw.png"
+        }
+    ],
+    "ops" : [
+        {
+            "name" : "Johnathan Vescio",
+            "title" : {
+                "en" : "Manager - Business Unit & Cloud Experimentation Evolution",
+                "fr" : "Gestionnaire"
+            },
+            "avatar" : "kw.png"
+        },
+        {
+            "name" : "Aaron Barclay",
+            "title" : {
+                "en" : "Cloud Infrastructure Specialist",
+                "fr" : "Spécialiste en infrastructure infonuagique"
+            },
+            "avatar" : "kw.png"
+        },
+        {
+            "name" : "Michel Jean-Louis",
+            "title" : {
+                "en" : "Cloud Infrastructure Specialist",
+                "fr" : "Spécialiste en infrastructure infonuagique"
+            },
+            "avatar" : "kw.png"
+        },
+        {
+            "name" : "Justin Evered",
+            "title" : {
+                "en" : "Cloud Infrastructure Specialist",
+                "fr" : "Spécialiste en infrastructure infonuagique"
+            },
+            "avatar" : "kw.png"
+        }
+    ]
+}
