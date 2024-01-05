@@ -15,7 +15,7 @@ title: À propos de nous
 ## À propos de nous
 
 <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-6">
     Here is some text that will flow around the image that is floated to the right.
   </div>
   <div class="col-md-3">
