@@ -17,10 +17,10 @@ title: Test page - Canada.ca
 # {{ page.contentTitle }}
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-6">
     We're a small innovative team focused on providing science research timely access to an exclusive set of secure environments & solutions where modern & innovative methods to doing science can be discovered with cutting-edge cloud technologies, supported by dedicated expert advisory services working across multiple cloud providers.
   </div>
-  <div class="col-md-8">
+  <div class="col-md-6">
     <img src="/assets/images/it-workers.png" alt="IT workers" class="img-responsive" />
   </div>
 </div>
