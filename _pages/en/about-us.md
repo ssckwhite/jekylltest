@@ -1,5 +1,5 @@
 ---
-altLangPrefix: index
+altLangPrefix: a-propos-de-nous
 authorName: Service Canada
 authorUrl:
 contentTitle: About us
