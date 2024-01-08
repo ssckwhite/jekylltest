@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
 					<a href="https://www.canada.ca/{{ page.lang }}.html" property="url">
-						<img src="{{ site.assets }}/{{ site.theme-name }}/assets/sig-blk-{{ page.lang }}.svg" alt="page.i18n.tmpl-gc-wmms[page.lang]" property="logo" />
+						<img src="{{ site.assets }}/{{ site.theme-name }}/assets/sig-blk-{{ page.lang }}.svg" alt="{{ page.i18n.tmpl-gc-wmms[page.lang] }}" property="logo" />
 						<span class="wb-inv"> /
 							<span lang="{% if page.lang == 'en' %}fr">{{ page.i18n.tmpl-gc-sig["fr"] }}{% else %}en">{{ page.i18n.tmpl-gc-sig["en"] }}{% endif %}</span>
 						</span>
@@ -14,7 +14,7 @@
 					<link property="logo" href="{{ site.assets }}/{{ site.theme-name }}/assets/wmms-blk.svg" />
 				</div>
 
-				<section id="wb-lng" class="col-xs-3 col-sm-12 text-right">
+				<div id="wb-lng" class="col-xs-3 col-sm-6 text-right">
 					<h2 class="wb-inv">{{ page.i18n.tmpl-lang-select[page.lang] }}</h2>
 					<ul class="list-inline mrgn-bttm-0">{% if page.lang == "en" %}
 						<li>
@@ -31,12 +31,12 @@
 							</a>
 						</li>{% endif %}
 					</ul>
-				</section>
+				</div>
 			</div>
 		</div>
-		<div style="background: linear-gradient(to right, #01023B, #A53F52 50%, #EA9A5C); color: #fff;">
+		<div style="background: linear-gradient(to right, #01023B, #A53F52 50%, #EA9A5C); color: #fff; padding: 1em 0;">
 			<nav class="container wb-navcurr">
-				<span class="lead" style="text-transform: uppercase; letter-spacing: .8rem;">{{ page.i18n.tmpl-cet-name[lang] }}</span>
+				<span class="lead" style="text-transform: uppercase; letter-spacing: .8rem;">{{ page.i18n.tmpl-cet-name[page.lang] }} ABC</span>
 			 </nav>
 		</div>
 	{% if page.sitemenu %}
