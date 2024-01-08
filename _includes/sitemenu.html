@@ -7,7 +7,7 @@
     </button>
     <ul role="menu" aria-orientation="vertical">
     {% for p in site.pages %}
-      {% if p.dir contains '/en/' %}
+      {% if p.url contains '/en/' %}
       <li role="presentation"><a role="menuitem" href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
       {% endif %}
     {% endfor %}
@@ -18,7 +18,7 @@
     </button>
     <ul role="menu" aria-orientation="vertical">
     {% for p in site.pages %}
-      {% if p.dir contains '/fr/' %}
+      {% if p.url contains '/fr/' %}
       <li role="presentation"><a role="menuitem" href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
       {% endif %}
     {% endfor %}
@@ -30,10 +30,11 @@
 <!--
 
 {% for p in site.pages %}
-  Relative URL: {{ p.url | relative_url }}
   Title: {{ p.title }}
-  Directory: {{ p.dir }}
-  Contains /en/: {% if p.dir contains '/en/' %}Yes{% else %}No{% endif %}
+  url: {{ p.url }}
+  Contains /en/: {% if p.url contains '/en/' %}Yes{% else %}No{% endif %}
+  Relative URL: {{ p.url | relative_url }}
+  Relative contains /en/: {% if (p.url | relative_url) contains '/en/' %}Yes{% else %}No{% endif %}
 
 {% endfor %}
 
