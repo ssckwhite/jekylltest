@@ -26,3 +26,15 @@
     {% endif %}
   </div>
 </nav>
+
+<!--
+
+{% for p in site.pages %}
+  Relative URL: {{ p.url | relative_url }}
+  Title: {{ p.title }}
+  Directory: {{ p.dir }}
+  Contains /en/: {% if p.dir contains '/en/' %}Yes{% else %}No{% endif %}
+
+{% endfor %}
+
+-->
