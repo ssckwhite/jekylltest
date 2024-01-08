@@ -36,6 +36,9 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ```js
 // Javascript code with syntax highlighting.
+
+// Note to self: will need to fix some code highlighting values, e.g. the contrast of these comments is only 2.72 but we need >=4.5 for WCAG 2.1 AA.
+
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
