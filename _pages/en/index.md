@@ -34,6 +34,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ### Header 3
 
+{% highlight javascript %}
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
@@ -41,6 +42,7 @@ var fun = function lang(l) {
   return true;
 }
 ```
+{% endhighlight %}
 
 ```ruby
 # Ruby code with syntax highlighting
