@@ -64,7 +64,7 @@ analytics_google: ""
 analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist/GCWeb"
 url: "https://ssckwhite.github.io"
-baseurl: ""
+baseurl: "/"
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
