@@ -64,7 +64,7 @@ analytics_google: ""
 analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist/GCWeb"
 url: "https://ssckwhite.github.io"
-baseurl: "/jekylltest"
+baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
@@ -291,4 +291,4 @@ stylesheets:
   - href: "assets/css/gh-code-highlight.css" # Hacky way to include the GH Rouge code highlighting theme. Required for code formatting.
 theme-name: GCWeb
 title: "gcweb-jekyll" # Site name or title
-wetSiteRoot: "https://ssckwhite.github.io/jekylltest"
+wetSiteRoot: "https://ssckwhite.github.io/"
