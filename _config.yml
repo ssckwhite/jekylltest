@@ -78,6 +78,11 @@ defaults:
     values:
       footer: true
       i18n:
+        # Some of these are used for a11y stuff, e.g. not *visible* but still req'd.
+        # To remove, search the entire source tree to confirm it's unused before removal.
+        tmpl-cet-name:
+          en: Science Cloud Experimentation Program
+          fr: Programme d'expérimentation en science infonuagique
         tmpl-about-government:
           en: About government
           fr: Au sujet du gouvernement
