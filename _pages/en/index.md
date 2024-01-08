@@ -129,6 +129,8 @@ end
 </dl>
 
 ```
+IMPORTANT: note that the below OG advice is invalid. I'm honestly not sure if it's because it *should* wrap for a11y reasons or to not break the WET theme etc, but it's a "feature"? :)
+
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
