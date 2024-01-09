@@ -274,7 +274,6 @@ defaults:
       lang: "en"
       langtoggle: true
       noMainContainer: false
-      noContentTitle: false
       share: false
       sitemenu: true
       sitesearch: false

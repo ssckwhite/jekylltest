@@ -268,7 +268,6 @@ defaults:
       lang: "en"
       langtoggle: true
       noMainContainer: false
-      noContentTitle: false
       share: true
       sitemenu: true
       sitesearch: true

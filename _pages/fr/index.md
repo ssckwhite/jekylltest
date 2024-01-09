@@ -7,15 +7,12 @@ description:
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
 lang: fr
 layout: page
-noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Page example
 ---
-
-# {{ page.contentTitle }}
 
 Il s'agit d'un paragraphe normal suivant un en-tête. GitHub est une plateforme d'hébergement de code pour le contrôle de version et la collaboration. Il vous permet, ainsi qu'à d'autres, de travailler ensemble sur des projets de n'importe où.
 

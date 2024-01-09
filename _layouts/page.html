@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% assign page.contentTitle = page.title %}
 {% include promotion.html %}
 {% if page.secondarymenu == true %}
 <div class="container">
@@ -21,12 +20,10 @@ layout: default
       {% when 'advance service' %}
         gc-advnc-srvc
     {% endcase %}" typeof="WebPageElement">{% endif %}
-{% unless page.noContentTitle %}
   {% assign navclass = page.pageclass | split: " " %}
   {% unless navclass contains "page-type-nav" %}
-      <h1 property="name" id="wb-cont">{{ page.contentTitle }}</h1>
+      <h1 property="name" id="wb-cont">{{ page.title }}</h1>
   {% endunless %}
-{% endunless %}
       {{ content }}
       {% if page.deptfeatures %}
         {% include deptfeatures.html %}

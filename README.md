@@ -9,19 +9,17 @@ New pages should be created in `_pages/en/` and `_pages/fr/`, with the *front ma
 altLangPrefix: a-propos-de-nous
 authorName: Service Canada
 authorUrl:
-contentTitle: About us
+title: About us
 dateModified: 2024-01-04
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
-noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Test page - Canada.ca
 ---
-# {{ page.contentTitle }}
 
 <div class="row">
   <div class="col-md-6">

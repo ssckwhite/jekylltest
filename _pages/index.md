@@ -1,5 +1,4 @@
 ---
-  contentTitle: Canada.ca
   creator:
     en: Government of Canada, Service Canada, Citizen Service Branch, Integrated Channel Management, Web Strategies and Product Management
     fr: Gouvernement du Canada, Service Canada, Direction générale de service aux citoyens, Gestion intégrée des modes de service, Gestion des stratégies et produits Web
