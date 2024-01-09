@@ -12,15 +12,14 @@ subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 ---
-
 <div class="row">
-  <div class="col-md-6 pull-right">
-     <div class="mrgn-bttm-md">
-      <img src="/assets/images/it-workers.png" alt="IT workers" class="img-responsive" />
-     </div>
+  <div class="col-md-6">
+    We're a small innovative team focused on providing science research timely access to an exclusive set of secure environments & solutions where modern & innovative methods to doing science can be discovered with cutting-edge cloud technologies, supported by dedicated expert advisory services working across multiple cloud providers.
   </div>
-  <div class="mrgn-lft-md mrgn-rght-md">
-   <p>We're a small innovative team focused on providing science research timely access to an exclusive set of secure environments & solutions where modern & innovative methods to doing science can be discovered with cutting-edge cloud technologies, supported by dedicated expert advisory services working across multiple cloud providers.</p>
+  <div class="col-md-6">
+    <img src="/assets/images/it-workers.png" alt="IT workers" class="img-responsive" />
+  </div>
+</div>
 
 ## Meet the team
 
@@ -70,7 +69,4 @@ The AI for Science team manages the CanChat for Science pilot and investigates A
   {% for member in site.data.staff.students %}
     {% include staffpanel.html %}
   {% endfor %}
-</div>
-
-  </div>
 </div>
