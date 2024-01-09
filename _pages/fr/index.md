@@ -2,7 +2,6 @@
 altLangPrefix: index
 authorName: Service Canada
 authorUrl: 
-contentTitle: Canada.ca Jekyll theme
 description:
   en: "Get quick, easy access to all Government of Canada services and information."
   fr: "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
@@ -13,7 +12,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Test page - Canada.ca
+title: Page example
 ---
 
 # {{ page.contentTitle }}
