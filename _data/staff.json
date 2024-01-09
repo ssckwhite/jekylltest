@@ -1,46 +1,57 @@
 {
+    "upperdeck" : [
+        {
+            "name" : "Marcello Centurione",
+            "title" : {
+                "en" : "Director",
+                "fr" : "Directeur"
+            }
+        },
+        {
+            "name" : "John Nephin",
+            "title" : {
+                "en" : "Senior Cloud Architect",
+                "fr" : "Architecte sénior infonuagique"
+            }
+        }
+    ],
     "business" : [
         {
             "name" : "Jean-Francois Michaud",
             "title" : {
                 "en" : "Manager - Business Unit & Cloud Experimentation Evolution",
                 "fr" : "Gestionnaire"
-            },
-            "avatar" : "jf.png"
+            }
         },
         {
             "name" : "James Buchanan",
             "title" : {
                 "en" : "Program Enablement",
                 "fr" : "Program Enablement"
-            },
-            "avatar" : "jb.png"
+            }
         }
     ],
     "evo" : [
-        {
-            "name" : "Kevin White",
-            "title" : {
-                "en" : "Cloud Developer",
-                "fr" : "Développeur infonuagique"
-            },
-            "avatar" : "kw.png"
-        },
         {
             "name" : "Greg Linton",
             "title" : {
                 "en" : "Cloud Developer",
                 "fr" : "Développeur infonuagique"
-            },
-            "avatar" : "kw.png"
+            }
+        },
+        {
+            "name" : "Kevin White",
+            "title" : {
+                "en" : "Cloud Developer",
+                "fr" : "Développeur infonuagique"
+            }
         },
         {
             "name" : "Ryne Wood",
             "title" : {
                 "en" : "Cloud Developer",
                 "fr" : "Développeur infonuagique"
-            },
-            "avatar" : "kw.png"
+            }
         }
     ],
     "ops" : [
@@ -49,32 +60,45 @@
             "title" : {
                 "en" : "Manager - Cloud Infrastructure",
                 "fr" : "Gestionnaire - infrastructure infonuagique"
-            },
-            "avatar" : "kw.png"
+            }
         },
         {
             "name" : "Aaron Barclay",
             "title" : {
                 "en" : "Cloud Infrastructure Specialist",
                 "fr" : "Spécialiste en infrastructure infonuagique"
-            },
-            "avatar" : "kw.png"
+            }
         },
         {
             "name" : "Michel Jean-Louis",
             "title" : {
                 "en" : "Cloud Infrastructure Specialist",
                 "fr" : "Spécialiste en infrastructure infonuagique"
-            },
-            "avatar" : "kw.png"
+            }
         },
         {
             "name" : "Justin Evered",
             "title" : {
                 "en" : "Cloud Infrastructure Specialist",
                 "fr" : "Spécialiste en infrastructure infonuagique"
-            },
-            "avatar" : "kw.png"
+            }
+        }
+    ],
+    "students" : [
+            
+        {
+            "name" : "Nicholai Ponomarev",
+            "title" : {
+                "en" : "Student Developer",
+                "fr" : "Étudiant développeur"
+            }
+        },
+        {
+            "name" : "Jean-Christophe Boivin",
+            "title" : {
+                "en" : "Student Cloud Infrastructure",
+                "fr" : "Étudiant infrastructure infonuagique"
+            }
         }
     ]
 }

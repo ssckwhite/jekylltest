@@ -1,7 +1,7 @@
   <div class="col-sm-6 col-md-3">
     <section class="panel panel-default hght-inhrt">
       <div class="panel-body">
-        <img src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }} avatar" class="img-responsive" />
+        <img src="/assets/images/avatars/{{ member.name | uri_escape }}.jpg" alt="{{ member.name }} avatar" class="img-responsive" />
         <p><b>{{ member.name }}</b></p>
         <p>{{ member.title[page.lang] }}</p>
       </div>
