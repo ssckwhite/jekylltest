@@ -17,6 +17,8 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
+** Hi JF!**
+
 [Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
