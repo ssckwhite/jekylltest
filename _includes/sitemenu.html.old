@@ -1,0 +1,41 @@
+<nav class="gcweb-menu" typeof="SiteNavigationElement">
+  <div class="container">
+    <h2 class="wb-inv">Menu</h2>
+    {% if page.lang == "en" %}
+    <button type="button" aria-haspopup="true" aria-expanded="false">
+      <span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span>
+    </button>
+    <ul role="menu" aria-orientation="vertical">
+    {% for p in site.pages %}
+      {% if p.url contains '/en/' %}
+      <li role="presentation"><a role="menuitem" href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    {% else %}
+    <button type="button" aria-haspopup="true" aria-expanded="false">
+      Menu<span class="wb-inv"> principal</span> <span class="expicon glyphicon glyphicon-chevron-down"></span>
+    </button>
+    <ul role="menu" aria-orientation="vertical">
+    {% for p in site.pages %}
+      {% if p.url contains '/fr/' %}
+      <li role="presentation"><a role="menuitem" href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</nav>
+
+<!--
+
+{% for p in site.pages %}
+  Title: {{ p.title }}
+  url: {{ p.url }}
+  Contains /en/: {% if p.url contains '/en/' %}Yes{% else %}No{% endif %}
+  Relative URL: {{ p.url | relative_url }}
+  Relative contains /en/: {% if (p.url | relative_url) contains '/en/' %}Yes{% else %}No{% endif %}
+
+{% endfor %}
+
+-->

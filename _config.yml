@@ -288,6 +288,9 @@ stylesheets:
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin: "anonymous"
   - href: "assets/css/gh-code-highlight.css" # Hacky way to include the GH Rouge code highlighting theme. Required for code formatting.
+  - href: "assets/css/style.css"
+javascripts:
+  - src: "assets/js/menu.js"
 theme-name: GCWeb
 title: "gcweb-jekyll" # Site name or title
 wetSiteRoot: "https://ssckwhite.github.io/"
