@@ -38,12 +38,15 @@
 			<nav class="container wb-navcurr">
 				<span class="lead" style="text-transform: uppercase; letter-spacing: .8rem;">{{ page.i18n.tmpl-cet-name[page.lang] }}</span>
 			 </nav>
+
+			 {% if page.sitemenu %}
+			 {% include sitemenu.html %}
+			 {% else %}
+				 <span data-trgt="mb-pnl" class="wb-menu hide"></span>
+			 {% endif %}
+
 		</div>
-	{% if page.sitemenu %}
-	{% include sitemenu.html %}
-	{% else %}
-		<span data-trgt="mb-pnl" class="wb-menu hide"></span>
-	{% endif %}
+
 	{% if page.breadcrumbs %}
 	{% include breadcrumbs.html %}
 	{% endif %}

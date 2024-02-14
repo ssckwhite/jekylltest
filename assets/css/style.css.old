@@ -1,0 +1,114 @@
+/******* Top nav bar *******/
+
+
+
+/******* Top nav bar (link container) *******/
+.top-nav {
+    clear: both;
+    text-align: right;
+    list-style: none;
+    margin: 0.5rem auto 0.5rem auto;
+    padding: 0;
+}
+
+@media (max-width: 1341px) {
+    .top-nav {
+        position: fixed;
+        width: 100%;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+/******* Top nav bar links *******/
+.top-nav--link {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 1341px) {
+    .top-nav--link {
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-nav--link {
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width: 1342px) {
+    .top-nav--link {
+        display: inline-block;
+        position: relative;
+    }
+
+    .top-nav--link:first-child {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-nav--link {
+        margin: 0 1rem;
+    }
+}
+
+.top-nav--link a {
+    color: #FFFFFF;
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin: 0.7rem;
+    text-decoration: none;
+    position: relative;
+}
+
+@media (min-width: 1342px) {
+    .top-nav--link a {
+        font-size: 2rem;
+    }
+}
+
+.top-nav--link a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: #A53F52;
+    border: #A53F52 0px solid;
+    width: 0%;
+    height: 4px;
+    bottom: -0.5rem;
+    transition: all 0.45s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Not sure if this guy is req'd??*/
+@media (min-width: 768px) {
+    .top-nav--link a:hover::after {
+        width: 100%;
+        border-width: 1px;
+    }
+}
+
+.top-nav--link.active a::after {
+    background: #A53F52;
+    border: #A53F52 1px solid;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .top-nav--link:last-child a {
+        margin-right: 0;
+    }
+}
+
+/*Not sure if this guy is req'd??*/
+@media (min-width: 768px) {
+    .sticky .top-nav--link a {
+        font-weight: 300;
+        color: #232323;
+    }
+}
