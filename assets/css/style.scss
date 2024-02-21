@@ -43,6 +43,27 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 .top-nav--link {
     display: block;
     text-align: center;
+	a {
+		color: #FFFFFF;
+		font-size: 3.5rem;
+		font-weight: 100;
+		margin: 0.7rem;
+		text-decoration: none;
+		position: relative;
+		&::after {
+			display: block;
+			position: absolute;
+			content: "";
+			background: $gray_accent;
+			border: $gray_accent 0px solid;
+			width: 0%;
+			height: 4px;
+			bottom: -0.5rem;
+			transition: all 0.45s ease-in-out;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
 
 @media (max-width: $screen-md-max) {
@@ -61,46 +82,20 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
     .top-nav--link {
         display: inline-block;
         position: relative;
+		a {
+			font-size: 2rem;
+		}
     }
 
-    .top-nav--link:first-child {
-        display: none;
-    }
+    //.top-nav--link:first-child {
+    //    display: none;
+    //}
 }
 
 @media (min-width: $screen-md-min) {
     .top-nav--link {
         margin: 0 1rem;
     }
-}
-
-.top-nav--link a {
-    color: #FFFFFF;
-    font-size: 3.5rem;
-    font-weight: 100;
-    margin: 0.7rem;
-    text-decoration: none;
-    position: relative;
-}
-
-@media (min-width: $screen-lg-min) {
-    .top-nav--link a {
-        font-size: 2rem;
-    }
-}
-
-.top-nav--link a::after {
-    display: block;
-    position: absolute;
-    content: "";
-    background: $gray_accent;
-    border: $gray_accent 0px solid;
-    width: 0%;
-    height: 4px;
-    bottom: -0.5rem;
-    transition: all 0.45s ease-in-out;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /*Not sure if this guy is req'd??*/

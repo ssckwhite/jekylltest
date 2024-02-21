@@ -1,6 +1,7 @@
 ---
 altLangPrefix: index
 title: SSC-SP-CET
+include_in_sitemenu: true
 ---
 
 <div class="row">

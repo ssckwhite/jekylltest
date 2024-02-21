@@ -279,6 +279,16 @@ defaults:
       sitesearch: false
       stylesheets:
 
+headermenu:
+  en:
+    - index
+    - about-us
+    - example-page
+  fr:
+    - index
+    - a-propos-de-nous
+    - page-example
+
 encoding: utf-8 # Make sure the encoding is right
 email: ""
 repo: "https://github.com/wet-boew/gcweb-jekyll"

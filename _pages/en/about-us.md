@@ -11,6 +11,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
+include_in_sitemenu: true
 ---
 <div class="row">
   <div class="col-md-6">
