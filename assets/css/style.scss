@@ -53,13 +53,8 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 			display: block;
 			position: absolute;
 			content: "";
-<<<<<<< HEAD
 			background: $menu_active_colour;
 			border: $menu_active_colour 0px solid;
-=======
-			background: $gray_accent;
-			border: $gray_accent 0px solid;
->>>>>>> 36a26038bf540c988359c06ea2bbffe65460ee33
 			width: 0%;
 			height: 4px;
 			bottom: -0.5rem;
@@ -68,7 +63,6 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 			transform: translateX(-50%);
 		}
 	}
-<<<<<<< HEAD
 	@media (max-width: $screen-md-max) {
 		padding-bottom: 16px;
 	}
@@ -90,40 +84,6 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 	@media (min-width: $screen-md-min) {
 		margin: 0 1rem;
 	}
-=======
-}
-
-@media (max-width: $screen-md-max) {
-    .top-nav--link {
-        padding-bottom: 16px;
-    }
-}
-
-@media (max-width: $screen-xs-max) {
-    .top-nav--link {
-        margin: 2rem 0;
-    }
-}
-
-@media (min-width: $screen-lg-min) {
-    .top-nav--link {
-        display: inline-block;
-        position: relative;
-		a {
-			font-size: 2rem;
-		}
-    }
-
-    //.top-nav--link:first-child {
-    //    display: none;
-    //}
-}
-
-@media (min-width: $screen-md-min) {
-    .top-nav--link {
-        margin: 0 1rem;
-    }
->>>>>>> 36a26038bf540c988359c06ea2bbffe65460ee33
 }
 
 /*Not sure if this guy is req'd??*/
