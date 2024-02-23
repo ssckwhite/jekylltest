@@ -71,8 +71,7 @@ description:
   fr: "Adaption Jekyll du theme GCWeb" # French site description and default description
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: pages
     values:
@@ -143,72 +142,6 @@ defaults:
         tmpl-menu-footer-about-contact-link:
           en: https://www.canada.ca/en/contact.html
           fr: https://www.canada.ca/fr/contact.html
-        tmpl-menu-footer-about-departments-text:
-          en: Departments and agencies
-          fr: Ministères et organismes
-        tmpl-menu-footer-about-departments-link:
-          en: https://www.canada.ca/en/government/dept.html
-          fr: https://www.canada.ca/fr/gouvernement/min.html
-        tmpl-menu-footer-about-military-text:
-          en: Public service and military
-          fr: Fonction publique et force militaire
-        tmpl-menu-footer-about-military-link:
-          en: https://www.canada.ca/en/government/publicservice.html
-          fr: https://www.canada.ca/fr/gouvernement/fonctionpublique.html
-        tmpl-menu-footer-about-news-text:
-          en: News
-          fr: Nouvelles
-        tmpl-menu-footer-about-news-link:
-          en: https://www.canada.ca/en/news.html
-          fr: https://www.canada.ca/fr/nouvelles.html
-        tmpl-menu-footer-about-treaties-text:
-          en: Treaties, laws and regulations
-          fr: Traités, lois et règlements
-        tmpl-menu-footer-about-treaties-link:
-          en: https://www.canada.ca/en/government/system/laws.html
-          fr: https://www.canada.ca/fr/gouvernement/systeme/lois.html
-        tmpl-menu-footer-about-reporting-text:
-          en: Government-wide reporting
-          fr: Rapports à l'échelle du gouvernement
-        tmpl-menu-footer-about-reporting-link:
-          en: https://www.canada.ca/en/transparency/reporting.html
-          fr: https://www.canada.ca/fr/transparence/rapports.html
-        tmpl-menu-footer-about-pm-text:
-          en: Prime Minister
-          fr: Premier ministre
-        tmpl-menu-footer-about-pm-link:
-          en: https://pm.gc.ca/eng
-          fr: https://pm.gc.ca/fra
-        tmpl-menu-footer-about-government-text:
-          en: How government works
-          fr: Comment le gouvernement fonctionne
-        tmpl-menu-footer-about-government-link:
-          en: https://www.canada.ca/en/government/system.html
-          fr: https://www.canada.ca/fr/gouvernement/systeme.html
-        tmpl-menu-footer-about-open-text:
-          en: Open government
-          fr: ouvernement ouvert
-        tmpl-menu-footer-about-open-link:
-          en: https://open.canada.ca/en/
-          fr: https://ouvert.canada.ca/
-        tmpl-menu-footer-communications-social-text:
-          en: Social media
-          fr: Médias sociaux
-        tmpl-menu-footer-communications-social-link:
-          en: https://www.canada.ca/en/social.html
-          fr: https://www.canada.ca/fr/sociaux.html
-        tmpl-menu-footer-communications-mobile-text:
-          en: Mobile applications
-          fr: Applications mobiles
-        tmpl-menu-footer-communications-mobile-link:
-          en: https://www.canada.ca/en/mobile.html
-          fr: ttps://www.canada.ca/fr/mobile.html
-        tmpl-menu-footer-communications-about-text:
-          en: About Canada.ca
-          fr: À propos de Canada.ca
-        tmpl-menu-footer-communications-about-link:
-          en: https://www1.canada.ca/en/newsite.html
-          fr: https://www1.canada.ca/fr/nouveausite.html
         tmpl-menu-footer-communications-terms-text:
           en: Terms and conditions
           fr: Avis
@@ -221,33 +154,6 @@ defaults:
         tmpl-menu-footer-communications-privacy-link:
           en: https://www.canada.ca/en/transparency/privacy.html
           fr: https://www.canada.ca/fr/transparence/confidentialite.html
-        tmpl-promo-title:
-          en: Promotions
-          fr: Promotions
-        tmpl-register:
-          en: Register
-          fr: Inscription
-        tmpl-search:
-          en: Search
-          fr: Recherche
-        tmpl-search-site:
-          en: Search Canada.ca
-          fr: Rechercher dans Canada.ca
-        tmpl-section-menu:
-          en: Section menu
-          fr: Menu de la section
-        tmpl-sign-on-info:
-          en: Sign-on information
-          fr: Information de l'utilisateur actuel
-        tmpl-signed-in-as:
-          en: Signed in as
-          fr: Connecté en tant que
-        tmpl-signin:
-          en: Sign in
-          fr: Ouvrir une session
-        tmpl-signout:
-          en: Sign out
-          fr: Fermer la session
         tmpl-skip-about-site:
           en: Skip to About this site
           fr: Passer à «&#160;À propos de ce site&#160;»
@@ -271,13 +177,21 @@ defaults:
           fr: Vous êtes ici&#160;
       layout: "page"
       javascripts:
-      lang: "en"
       langtoggle: true
       noMainContainer: false
       share: false
       sitemenu: true
       sitesearch: false
       stylesheets:
+  # These two setup the lang to be automagically set per the page location
+  - scope:
+      path: "_pages/en"
+    values:
+      lang: "en"    
+  - scope:
+      path: "_pages/fr"
+    values:
+      lang: "fr"
 
 headermenu:
   en:
@@ -295,8 +209,9 @@ repo: "https://github.com/wet-boew/gcweb-jekyll"
 # service_worker: false # Will turn off the service worker if set to false
 stylesheets:
   - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin: "anonymous"
+    # Note to self: was causing a CORS error, probably just need to get an updated integrity hash
+    #integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    #crossorigin: "anonymous"
   - href: "assets/css/gh-code-highlight.css" # Hacky way to include the GH Rouge code highlighting theme. Required for code formatting.
   - href: "assets/css/style.css"
 javascripts:
